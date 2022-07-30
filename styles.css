@@ -1,0 +1,137 @@
+:root{
+    --dark: #25034c;
+    --prime: #4e148c;
+    --ultra-dark: #3d0e61;
+    --mid-dark: #461177;
+    --mid-light: #7364d2;
+    --light: #858ae3;
+    --blue-text: #97dffc;
+    --mid-blue: #8eb5f0;
+    --light-yellow: #ffe047;
+    --darker-yellow: #ffce1f;
+}
+
+body{
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: var(--dark);
+    color: var(--blue-text);
+    text-shadow: 3px 1px 5px var(--dark);
+}
+.all{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+
+}
+.stats{
+    background-image: linear-gradient(to bottom right, var(--mid-light), var(--dark));
+    width: 60%;
+    border-radius: 50px;
+}
+.level-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        align-items: center;
+        color: var(--light-yellow);
+}
+.progress-bar{
+    width: 80%;
+    height: 6px;
+    border-radius: 5px;
+    background-color: var(--mid-light); 
+    margin-bottom: 50px;
+
+}
+.progress{
+    background-color: var(--light-yellow);
+    width: 70%;
+    height: inherit;
+    border-radius: inherit;
+    
+}
+.total,
+.victories{
+    margin-left: 100px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+.down{
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inventory{
+    position: relative;
+    background-color: var(--mid-light);
+    width: 90%;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;   
+}
+.inventory-grid{
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 90%;
+    height: 65%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    
+ 
+
+}
+.item{
+    background-color: #3d0e61;
+    height: 90px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.title-inventory{
+    position: absolute;
+    top: 0;
+    font-size: 28px;
+}
+.shop{
+    position: absolute;
+    bottom: 20px;
+    width: 120px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--light-yellow);
+    border: solid 5px var(--darker-yellow);
+    font-size: 19px;
+    color: var(--dark);
+    font-weight: 800;
+}
+.shop:hover{
+    cursor: pointer;
+}
+.coins{
+    position: absolute;
+    right: 30px;
+    top: 0;
+    font-size: 30px;
+    color: yellow;
+}
+span{
+    color: var(--light-yellow)
+}
+.item i{
+    color: var(--mid-light);
+    font-size: 40px;
+}
